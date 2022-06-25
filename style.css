@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #fbda61, #ff5acd);
+}
+
+.cartão {
+    position: relative;
+    background: white;
+    width: 350px;
+    height: 190px;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(218, 82, 93, 0.932);
+    transition: 0.5s;
+}
+
+/* ANIMATION */
+.cartão:hover {
+    height: 450px;
+}
+
+/* IMG BOX */
+.Imgbx {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+}
+
+.Imgbx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* IMG TRANSITION */
+.cartão:hover .Imgbx {
+    width: 140px;
+    height: 140px;
+    transition: 0.5s;
+}
+
+/* CARD CONTENT */
+.cartão .content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+/* CARD DETAILS */
+.cartão .content .detalhes {
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(250px); /* card details animation */
+}
+
+
+.cartão:hover .content .detalhes{
+    transform: translateY(0px);
+}
+
+.cartão .content .detalhes h2 {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: rgb(44, 54, 54);
+    line-height: 1.2em;
+}
+
+.cartão .content .detalhes span {
+    font-size: 0.75em;
+    font-weight: 500;
+}
+
+.content .detalhes .data {
+    margin: 20px;
+}
+
+.content .detalhes .data span {
+    font-size: 0.70em;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.content .detalhes .data h3 {
+    font-size: 1em;
+    color: #555;
+}
+
+.detalhes .social {
+    justify-content: space-between;
+    display: flex;
+    gap: 20px;
+}
+
+.detalhes .social button{
+    color: rgb(255, 255, 255);
+    background: #ff5a62;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* SOCIAL LINKS */
+.detalhes .social button a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.cartão .content .detalhes .social button:hover{
+    background: black;
+    transition: 0.5s;
+}
