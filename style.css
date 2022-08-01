@@ -13,6 +13,21 @@ body {
     align-items: center;
     min-height: 100vh;
     background: linear-gradient(45deg, #fbda61, #ff5acd);
+    background-size: 400% 400%;
+    animation: change 10s ease-in-out infinite;
+}
+
+/* background animation */
+@keyframes change {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
 }
 
 .cartão {
