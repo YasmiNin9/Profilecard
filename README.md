@@ -5,4 +5,6 @@
 > Olá, tudo bem? Espero que sim! 
 ### Esse é um projeto desenvolvido a partir de uma aula, em que foi criado um *cartão moderno* com os dados baseados em um perfil do Instagram.
 > - Espero que você dê uma olhada 👏😊
+> - [View Project](https://profile-card-with-css.vercel.app)
+
 > - I hope you'll take a look and give me a helpful comment/critique to help 👏😊
